@@ -270,6 +270,28 @@ h2 { margin: 0; font-size: clamp(2.8rem, 6vw, 5.2rem); }
   filter: brightness(.94);
 }
 
+
+.game-legal-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+  font-size: .82rem;
+  color: var(--muted);
+}
+
+.game-legal-links a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color .18s ease;
+}
+
+.game-legal-links a:hover {
+  color: var(--purple-dark);
+  text-decoration: underline;
+}
+
 .site-footer {
   padding: 30px 0 42px;
   background: var(--paper-2);
@@ -391,4 +413,178 @@ h2 { margin: 0; font-size: clamp(2.8rem, 6vw, 5.2rem); }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; }
+}
+
+
+/* Footer links */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.footer-links a {
+  color: var(--purple-dark);
+  text-decoration: none;
+  font-weight: 600;
+}
+.footer-links a:hover { text-decoration: underline; }
+
+/* Legal pages */
+.legal-body {
+  min-height: 100vh;
+  background: var(--paper-2);
+}
+.legal-header {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255,255,255,.35), transparent 25%),
+    radial-gradient(circle at 85% 0%, rgba(255,255,255,.20), transparent 22%),
+    var(--yellow);
+  padding: 34px 0 64px;
+}
+.legal-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.legal-brand {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+.legal-brand img {
+  width: 132px;
+  height: auto;
+  display: block;
+}
+.legal-home {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  border: 1px solid rgba(94,84,109,.42);
+  border-radius: 999px;
+  color: var(--purple-dark);
+  background: rgba(255,255,255,.18);
+  text-decoration: none;
+  font-weight: 700;
+  transition: .18s ease;
+}
+.legal-home:hover {
+  background: var(--purple);
+  border-color: var(--purple);
+  color: white;
+  transform: translateY(-2px);
+}
+.legal-main {
+  width: min(calc(100% - 40px), 860px);
+  margin: -28px auto 72px;
+  position: relative;
+  z-index: 2;
+}
+.legal-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: clamp(28px, 5vw, 58px);
+  box-shadow: 0 12px 40px rgba(52,43,57,.07);
+}
+.legal-kicker {
+  margin: 0 0 10px;
+  color: var(--purple-dark);
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  font-size: .78rem;
+  font-weight: 800;
+}
+.legal-card h1 {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2.5rem, 7vw, 4.6rem);
+  line-height: 1.02;
+  letter-spacing: -.045em;
+}
+.legal-updated {
+  margin: 14px 0 34px;
+  color: var(--muted);
+  font-size: .95rem;
+}
+.legal-summary {
+  margin: 0 0 34px;
+  padding: 18px 20px;
+  border-radius: 16px;
+  background: rgba(124,113,141,.09);
+  border: 1px solid rgba(124,113,141,.14);
+}
+.legal-summary strong { color: var(--purple-dark); }
+.legal-card h2 {
+  margin: 36px 0 12px;
+  font-size: 1.38rem;
+  letter-spacing: -.02em;
+}
+.legal-card p,
+.legal-card li { color: var(--muted); }
+.legal-card p { margin: 0 0 15px; }
+.legal-card ul { padding-left: 1.3rem; }
+.legal-card a {
+  color: var(--purple-dark);
+  font-weight: 700;
+  text-underline-offset: 3px;
+}
+.legal-note {
+  margin-top: 38px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  font-size: .9rem;
+  color: var(--muted);
+}
+.legal-footer {
+  width: min(calc(100% - 40px), 860px);
+  margin: 0 auto 38px;
+  color: var(--muted);
+  font-size: .9rem;
+  text-align: center;
+}
+@media (max-width: 560px) {
+  .legal-header { padding: 26px 0 52px; }
+  .legal-header-inner { align-items: center; }
+  .legal-brand img { width: 102px; }
+  .legal-home { padding: 8px 13px; font-size: .9rem; }
+  .legal-main { width: min(calc(100% - 24px), 860px); margin-bottom: 46px; }
+  .legal-card { border-radius: 20px; padding: 24px; }
+}
+
+
+/* Store buttons */
+.platform-link.store-button {
+  width: auto;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 18px;
+  border-radius: 999px;
+  font-size: .95rem;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.platform-link.store-button svg {
+  width: 21px;
+  height: 21px;
+  flex: 0 0 auto;
+}
+
+.platform-link.store-button span {
+  display: inline-block;
+}
+
+@media (max-width: 520px) {
+  .platform-link.store-button {
+    min-height: 48px;
+    height: auto;
+    padding: 13px 17px;
+  }
 }
