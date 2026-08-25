@@ -1,13 +1,144 @@
 <!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Typin" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Typin</title>
-  <link rel="icon" href="icon.jpg">
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<iframe class="iframe" src="https://typingames.carrd.co">
-</iframe>
+  <header class="site-header" id="top">
+    <div class="container hero">
+      <img class="typin-logo" src="assets/logo.png" alt="Typin" />
+      <div class="hero-copy">
+        <p class="intro">Hello! I'm <b>Julien</b>, a French independent game developer and hobbyist illustrator.</p>
+        <nav class="socials" aria-label="Social links">
+          <a href="https://x.com/Typin_" target="_blank" rel="noreferrer" aria-label="X / Twitter" title="X / Twitter">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.77 7.74L23.2 22h-6.24l-4.89-6.4L6.47 22H3.35l7.27-8.31L1 2h6.4l4.42 5.84L18.9 2Zm-1.1 17.84h1.72L6.46 4.05H4.61L17.8 19.84Z"/></svg>
+          </a>
+          <a href="https://bsky.app/profile/typin.bsky.social" target="_blank" rel="noreferrer" aria-label="Bluesky" title="Bluesky">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 10.8c-1.6-3.1-5.95-8.88-9.98-11.74C.08-0.3 0 4.2 0 5.25c0 1.05.58 8.8.95 10.06.34 1.13 1.52 1.5 2.55 1.32 2.78-.48 5.22-2.2 6.9-4.18-.82 1.53-2.49 4.32-5.06 6.17-1.42 1.02-.39 2.67.62 3.08 1.98.81 4.5-.91 5.54-2.69.23-.39.4-.77.5-1.14.1.37.27.75.5 1.14 1.04 1.78 3.56 3.5 5.54 2.69 1.01-.41 2.04-2.06.62-3.08-2.57-1.85-4.24-4.64-5.06-6.17 1.68 1.98 4.12 3.7 6.9 4.18 1.03.18 2.21-.19 2.55-1.32.37-1.26.95-9.01.95-10.06 0-1.05-.08-5.55-2.02-6.19C17.95 1.92 13.6 7.7 12 10.8Z"/></svg>
+          </a>
+          <a href="mailto:contact@typin.games" aria-label="Email" title="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 2v.5l9 6 9-6V6H3Zm18 12V8.9l-8.45 5.63a1 1 0 0 1-1.1 0L3 8.9V18h18Z"/></svg>
+          </a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="projects-section" aria-label="Games">
+      <div class="project-nav-wrap">
+        <div class="container">
+          <div class="project-tabs" role="tablist" aria-label="Games">
+            <button class="project-tab active" role="tab" aria-selected="true" aria-controls="project-cupiclaw" id="tab-cupiclaw" data-project="cupiclaw">Cupiclaw</button>
+            <button class="project-tab" role="tab" aria-selected="false" aria-controls="project-pocket-cuisine" id="tab-pocket-cuisine" data-project="pocket-cuisine">Pocket Cuisine</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container project-content">
+        <article class="project-panel active" id="project-cupiclaw" role="tabpanel" aria-labelledby="tab-cupiclaw">
+          <div class="project-top">
+            <div class="project-art">
+              <img class="project-keyart" src="assets/cupiclaw/keyart.png" alt="Cupiclaw key art" />
+            </div>
+
+            <div class="project-info">
+              <p class="project-status">Available now</p>
+              <h2>Cupiclaw</h2>
+              <p class="project-tagline">A cute &amp; frantic claw machine roguelike deckbuilder.</p>
+              <p class="project-description">Grab unique prizes, build powerful combos, face chaotic machines… and claw back your relationship!</p>
+              <div class="project-links" aria-label="Cupiclaw links">
+                <a class="platform-link" href="https://store.steampowered.com/app/2967670/Cupiclaw/" target="_blank" rel="noreferrer" aria-label="Cupiclaw on Steam" title="Steam">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.98 0C5.7 0 .52 4.84.04 11l6.43 2.66a3.5 3.5 0 0 1 6.68 1.08l4.58 1.9a4.46 4.46 0 1 1-1.12 2.5l-4.44-1.84a3.5 3.5 0 0 1-6.68-1.1L.15 14A12 12 0 1 0 11.98 0ZM7.95 18.13a2.13 2.13 0 1 0 1.63-3.93l-2.82-1.17.86 2.07a1.56 1.56 0 1 1-.83 2.04l-2.08-.86a2.12 2.12 0 0 0 3.24 1.85Zm9.83-5.97a2.98 2.98 0 1 0 0 5.96 2.98 2.98 0 0 0 0-5.96Zm0 .75a2.23 2.23 0 1 1 0 4.46 2.23 2.23 0 0 1 0-4.46Z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="media-grid" id="cupiclaw-media">
+            <div class="video-card">
+              <div class="video-wrap">
+                <iframe src="https://www.youtube.com/embed/G60nFcFZNbk?rel=0" title="Cupiclaw Trailer" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <p class="media-label">Official trailer</p>
+            </div>
+
+            <div class="screenshots">
+              <button class="screenshot" type="button" data-full="assets/cupiclaw/ss1.png" aria-label="Open Cupiclaw screenshot 1"><img src="assets/cupiclaw/ss1.png" alt="Cupiclaw screenshot 1" loading="lazy" /></button>
+              <button class="screenshot" type="button" data-full="assets/cupiclaw/ss2.png" aria-label="Open Cupiclaw screenshot 2"><img src="assets/cupiclaw/ss2.png" alt="Cupiclaw screenshot 2" loading="lazy" /></button>
+              <button class="screenshot" type="button" data-full="assets/cupiclaw/ss3.png" aria-label="Open Cupiclaw screenshot 3"><img src="assets/cupiclaw/ss3.png" alt="Cupiclaw screenshot 3" loading="lazy" /></button>
+              <button class="screenshot" type="button" data-full="assets/cupiclaw/ss4.png" aria-label="Open Cupiclaw screenshot 4"><img src="assets/cupiclaw/ss4.png" alt="Cupiclaw screenshot 4" loading="lazy" /></button>
+			  <button class="screenshot" type="button" data-full="assets/cupiclaw/ss5.png" aria-label="Open Cupiclaw screenshot 5"><img src="assets/cupiclaw/ss5.png" alt="Cupiclaw screenshot 5" loading="lazy" /></button>
+			  <button class="screenshot" type="button" data-full="assets/cupiclaw/ss6.png" aria-label="Open Cupiclaw screenshot 6"><img src="assets/cupiclaw/ss6.png" alt="Cupiclaw screenshot 6" loading="lazy" /></button>
+			  <button class="screenshot" type="button" data-full="assets/cupiclaw/ss7.png" aria-label="Open Cupiclaw screenshot 7"><img src="assets/cupiclaw/ss7.png" alt="Cupiclaw screenshot 7" loading="lazy" /></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-panel" id="project-pocket-cuisine" role="tabpanel" aria-labelledby="tab-pocket-cuisine">
+          <div class="project-top">
+            <div class="project-art">
+              <img class="project-keyart" src="assets/pocketcuisine/keyart.png" alt="Pocket Cuisine key art" />
+            </div>
+
+            <div class="project-info">
+              <p class="project-status">Available now</p>
+              <h2>Pocket Cuisine</h2>
+              <p class="project-tagline">A compact cooking puzzle game made for touch screens.</p>
+              <p class="project-description">Can you become the ultimate Pocket Chef?</p>
+              <div class="project-links" aria-label="Pocket Cuisine links">
+                <a class="platform-link" href="https://play.google.com/store/apps/details?id=games.typin.pocketcuisine" target="_blank" rel="noreferrer" aria-label="Pocket Cuisine on Google Play" title="Google Play">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 2.3a2.1 2.1 0 0 0-.58 1.48v16.44c0 .58.22 1.1.58 1.48l9.08-9.7L3.6 2.3Zm10.36 8.33 2.89-3.08L5.63 1.13c-.45-.26-.92-.34-1.34-.22l9.67 9.72Zm0 2.74L4.29 23.1c.42.12.89.04 1.34-.22l11.22-6.42-2.89-3.09Zm4.36 1.55 3.04-1.74c.87-.5.87-1.31 0-1.81l-3.04-1.74-3.29 3.29 3.29 2.97Z"></path></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="media-grid" id="pocket-cuisine-media">
+            <div class="video-card">
+              <div class="video-wrap">
+                <iframe src="https://www.youtube.com/embed/EoNmQOJ4nCE?rel=0" title="Pocket Cuisine Trailer" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <p class="media-label">Official trailer</p>
+            </div>
+
+            <div class="screenshots">
+              <button class="screenshot" type="button" data-full="assets/pocketcuisine/ss1.png" aria-label="Open Pocket Cuisine screenshot 1"><img src="assets/pocketcuisine/ss1.png" alt="Pocket Cuisine screenshot 1" loading="lazy" /></button>
+              <button class="screenshot" type="button" data-full="assets/pocketcuisine/ss2.png" aria-label="Open Pocket Cuisine screenshot 2"><img src="assets/pocketcuisine/ss2.png" alt="Pocket Cuisine screenshot 2" loading="lazy" /></button>
+              <button class="screenshot" type="button" data-full="assets/pocketcuisine/ss3.png" aria-label="Open Pocket Cuisine screenshot 3"><img src="assets/pocketcuisine/ss3.png" alt="Pocket Cuisine screenshot 3" loading="lazy" /></button>
+              <button class="screenshot" type="button" data-full="assets/pocketcuisine/ss4.png" aria-label="Open Pocket Cuisine screenshot 4"><img src="assets/pocketcuisine/ss4.png" alt="Pocket Cuisine screenshot 4" loading="lazy" /></button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2023-<span id="year"></span> Typin | All rights reserved</span>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox">
+    <button class="lightbox-close" type="button" aria-label="Close screenshot">×</button>
+    <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous screenshot">‹</button>
+    <div class="lightbox-stage">
+      <img src="" alt="Expanded game screenshot" />
+    </div>
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="Next screenshot">›</button>
+    <div class="lightbox-counter" aria-live="polite"></div>
+  </dialog>
+
+  <script src="script.js"></script>
 </body>
-</html> 
+</html>
