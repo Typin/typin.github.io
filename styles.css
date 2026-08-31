@@ -34,10 +34,7 @@ a { color: inherit; }
 
 .site-header {
   padding: 52px 0 72px;
-  background:
-    radial-gradient(circle at 15% 20%, rgba(255,255,255,.35), transparent 25%),
-    radial-gradient(circle at 85% 0%, rgba(255,255,255,.20), transparent 22%),
-    var(--yellow);
+  background: var(--yellow);
 }
 
 .hero {
@@ -435,10 +432,7 @@ h2 { margin: 0; font-size: clamp(2.8rem, 6vw, 5.2rem); }
   background: var(--paper-2);
 }
 .legal-header {
-  background:
-    radial-gradient(circle at 15% 20%, rgba(255,255,255,.35), transparent 25%),
-    radial-gradient(circle at 85% 0%, rgba(255,255,255,.20), transparent 22%),
-    var(--yellow);
+  background: var(--yellow);
   padding: 34px 0 64px;
 }
 .legal-header-inner {
